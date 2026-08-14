@@ -1,0 +1,20 @@
+body{
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+.footer{
+    background-color:black;
+    padding: 20px 0px;
+    margin-top: auto;
+   border-radius: 20px;
+
+}
+.footer h3{
+      text-align: center;
+      color: white;
+}
+.footer p{
+    text-align: center;
+    color: rgb(168, 168, 168);
+}
