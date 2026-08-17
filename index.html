@@ -1,61 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>navbar</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- start navbar -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CUT SALON</title>
+
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+
+  
+
     <nav class="navbar">
-      <div class="left-nav">
-        <img src="./photo/logo.png" alt="Logo" height="100" />
-      </div>
-      <div class="center-nav">
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Prices</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Content Us</a></li>
-        </ul>
-      </div>
-      <div class="right-nav">
-        <button>Sign Up</button>
-      </div>
+
+     
+        <div class="left-nav">
+            <img src="./photo/logo.png" alt="CUT SALON Logo">
+        </div>
+
+  
+        <div class="center-nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right-nav">
+            <a href="#" class="signup-btn">Sign Up</a>
+        </div>
+
     </nav>
-    <!-- end navbar -->
-    <!-- start content -->
-    <div class="photo">
-      <img src="./photo/photo.png" alt="Logo" width="320px" height="100" />
-    </div>
 
-    <div class="center"><h1>why it is a must to choose us?</h1></div>
-    <div class="yellow center">
-      <h2>Your Style. Your Confidence. Our Priority</h2>
-    </div>
-    <div class="center"><h3>Where great hair meets great style.</h3></div>
-    <div>
-      <h3>
-        From fresh cuts to flawless color, we bring out the best version of you.
-        Professional hair care and styling for women & men, all in one place.
-      </h3>
-    </div>
 
-    <div class="blue center">
-      [Book Your Appointment] [Explore Our Services]
-    </div>
-    <div class="yellow center"><h3>Look Good. Feel Good. Be You.</h3></div>
+    <section class="home">
 
-    <!-- end content -->
-    <!-- start footer -->
+        <div class="photo">
+            <img src="./photo/photo.png" alt="CUT SALON">
+        </div>
+
+        <h1>
+            Why It Is a Must to
+            <span class="yellow">Choose Us?</span>
+        </h1>
+
+        <h2>
+            Your Style. Your Confidence. Our Priority
+        </h2>
+
+        <h3>
+            Where great hair meets great style.
+        </h3>
+
+        <p class="description">
+            From fresh cuts to flawless color, we bring out the best
+            version of you. Professional hair care and styling for
+            women & men, all in one place.
+        </p>
+
+      
+        <div class="buttons">
+
+            <a href="#" class="button">
+                Book Your Appointment
+            </a>
+
+            <a href="#services" class="button">
+                Explore Our Services
+            </a>
+
+        </div>
+
+        <h3 class="yellow">
+            Look Good. Feel Good. Be You.
+        </h3>
+
+    </section>
+
+
+  
+
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <p>
+            Professional services designed for your style.
+        </p>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <h3 class="title">
+                    Haircuts
+                </h3>
+
+                <p>
+                    Professional haircuts designed to match
+                    your style and personality.
+                </p>
+
+            </div>
+
+
+   
+            <div class="service-card">
+
+                <h3 class="title">
+                    Hair Styling
+                </h3>
+
+                <p>
+                    Get the perfect hairstyle for any occasion.
+                </p>
+
+            </div>
+
+
+         
+            <div class="service-card">
+
+                <h3 class="title">
+                    Hair Coloring
+                </h3>
+
+                <p>
+                    Professional coloring with beautiful
+                    and natural-looking results.
+                </p>
+
+            </div>
+
+
+            
+            <div class="service-card">
+
+                <h3 class="title">
+                    Hair Care
+                </h3>
+
+                <p>
+                    Treatments designed to keep your hair
+                    healthy and beautiful.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <footer class="footer">
-      <h3>CUT SALON</h3>
-      <p>Refined grooming, designed around detail, confidence and your time.</p>
-      <p>© 2026 CUT CLUB. All Rights Reserved.</p>
+
+        <h3>
+            CUT SALON
+        </h3>
+
+        <p>
+            Refined grooming, designed around detail,
+            confidence and your time.
+        </p>
+
+        <p>
+            © 2026 CUT SALON. All Rights Reserved.
+        </p>
+
     </footer>
-    <!-- end footer -->
-  </body>
+
+</body>
+
 </html>
