@@ -242,22 +242,23 @@ h3 {
     color: #ddd;
 }
 
-.footer {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.85);
+.footer{
+   background-color: black;
+    padding: 20px 0px;
+    margin-top: auto;
+    border: radius 30px;;
 }
-
-.footer h3 {
-    color: #d29b2d;
-    font-weight: bold;
-    margin-bottom: 10px;
+.footer-link{
+    text-decoration: none;
 }
-
-.footer p {
-    color: #ccc;
-    margin: 8px 0;
-    line-height: 1.5;
+.footer-link:hover{
+    color: rgb(223, 223, 75) !important;
+}
+.footer-location{
+    text-decoration: none;
+}
+.footer-location:hover{
+    color: rgb(223, 223, 75) !important;
 }
 
 @media (max-width: 900px) {
