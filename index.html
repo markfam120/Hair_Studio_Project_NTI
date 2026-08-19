@@ -5,92 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <title>CUT SALON</title>
-
-    <link rel="stylesheet" href="Home.css">
-
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>MELVN SALON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/Home.css">
 
 </head>
 
 <body>
 
-  
+    <!-- start navbar -->
 
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <img src="./photo/logo.png" alt="Logo" width="170px" height="110px" class="image-Logo navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="center-nav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" nav-links navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Men</a></li>
+                            <li><a class="dropdown-item" href="#">Women</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
 
-     
-        <div class="left-nav">
-            <img src="./photo/logo.png" alt="CUT SALON Logo">
+            <div class="right-nav text-center">
+
+                <a href="#" class="btn">
+                    <i class="fa-solid fa-calendar me-2 "></i>
+                    BOOK APPOINTMENT
+                </a>
+            </div>
         </div>
-
-  
-        <div class="center-nav">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <div class="right-nav">
-            <a href="#" class="signup-btn">Sign Up</a>
-        </div>
-
-
     </nav>
+    <!-- end navbar -->
 
 
-    <section class="home">
+    <!-- start Home page -->
+    <section id="hero" class="container py-5 my-2 hero d-md-flex align-items-center gap-4 vh-100">
 
-        <h1>
-            Why It Is a Must to
-            <span class="yellow">Choose Us?</span>
-        </h1>
+        <div class="hero-left w-50">
 
-        <h2>
-            Your Style. Your Confidence. Our Priority
-        </h2>
+            <div class="width-self ms-md-auto w-75">
+                <h6 id="hero-left-h" class="home2">HAIR & BEAUTY STUDIO</h6>
+                <h1 class="home1">YOUR BEAUTY,</h1>
+                <h1 class="home3">OUR PASSION</h1>
+                <p class="home4">Experience premium hair & beauty services </br> in a luxurious and relaxing
+                    environment. </p>
 
-        <h3>
-            Where great hair meets great style.
-        </h3>
-
-        <p class="description">
-            From fresh cuts to flawless color, we bring out the best
-            version of you. Professional hair care and styling for
-            women & men, all in one place.
-        </p>
-
-      
-        <div class="buttons">
-
-            <a href="#" class="button">
-                Book Your Appointment
-            </a>
-
-            <a href="#services" class="button">
-                Explore Our Services
-            </a>
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <i class="fa-solid fa-calendar me-2 "></i>
+                        BOOK APPOINTMENT
+                    </a>
+                    <a href="#services" class="btn-service">
+                        <i></i>
+                        EXPLORE SERVICES <span class="arrow">&rarr;</span>
+                    </a>
+                </div>
+            </div>
 
         </div>
-
-        <h3 class="yellow">
-            Look Good. Feel Good. Be You.
-        </h3>
 
     </section>
 
+    <!--end Home page  -->
+    <!-- 
 
   
 
-    <section class="services" id="services">
+    <section class="services vh-100" id="services">
 
         <h2>Our Services</h2>
 
@@ -155,81 +165,91 @@
                     Treatments designed to keep your hair
                     healthy and beautiful.
                 </p>
-            </div>
-      </div>
-    </section>
-
-<footer class="bg-black text-white rounded-4 mx-4 my-4 p-4  mt-auto">
-    <div class="container ">
-        <div class="row">
-
-            <div class=" col-md-3 mb-4">
-                <h3 class="text-warning">CUT SALON</h3>
-                <p class="text-secondary">
-                  Refined grooming,
-                  designed around detail,
-                 confidence and your time.
-                </p>
-            </div>
-                     <!-- updated footer -->
-            <!-- Links -->
-            <div class=" col-md-3 mb-4">
-                <h5>Explore</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#" class="footer-link text-secondary text-decoration-none">
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link text-secondary text-decoration-none">
-                           Prices
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link text-secondary text-decoration-none">
-                          Barbers  
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link text-secondary text-decoration-none">
-                            CUT CLUB
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Social Media -->
-            <div class="  col-md-3 mb-4">
-                <h5>Follow Us</h5>
-
-                <a href="#" class="footer-link text-secondary text-decoration-none me-3 d-flex align-items-start flex-column">
-                    Facebook
-                </a>
-
-                <a href="#" class="footer-link text-secondary text-decoration-none me-3  d-flex align-items-start flex-column">
-                    Instagram
-                </a>
-
-                <a href="#" class="footer-link text-secondary text-decoration-none  d-flex align-items-start flex-column">
-                    YouTube
-                </a>
-                <a href="#" class="footer-link text-secondary text-decoration-none  d-flex align-items-start flex-column">
-                    Twitter
-                </a>
-            </div>
-            <div class="footer-location text-decoration-none  col-md-3 mb-4">
-                <h5 class="text-white">Branches</h5>
-                <p class="text-secondary footer-location">Cairo,Nasr City</p>
-                <p class="text-secondary footer-location">Alexandria,El-Agamy</p>   
 
             </div>
 
         </div>
-    </div>
- </footer>  
 
-  
+    </section> -->
+
+
+    <footer class="bg-black text-white   my-4 p-4  mt-auto">
+        <div class="container ">
+            <div class="row">
+
+                <div class=" col-md-3 mb-4">
+                    <h3 class="text-warning">CUT SALON</h3>
+                    <p class="text-secondary">
+                        Refined grooming,
+                        designed around detail,
+                        confidence and your time.
+                    </p>
+                </div>
+                <!-- updated footer -->
+                <!-- Links -->
+                <div class=" col-md-3 mb-4">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link text-secondary text-decoration-none">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-secondary text-decoration-none">
+                                Prices
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-secondary text-decoration-none">
+                                Barbers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-secondary text-decoration-none">
+                                CUT CLUB
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="  col-md-3 mb-4">
+                    <h5>Follow Us</h5>
+
+                    <a href="#"
+                        class="footer-link text-secondary text-decoration-none me-3 d-flex align-items-start flex-column">
+                        Facebook
+                    </a>
+
+                    <a href="#"
+                        class="footer-link text-secondary text-decoration-none me-3  d-flex align-items-start flex-column">
+                        Instagram
+                    </a>
+
+                    <a href="#"
+                        class="footer-link text-secondary text-decoration-none  d-flex align-items-start flex-column">
+                        YouTube
+                    </a>
+                    <a href="#"
+                        class="footer-link text-secondary text-decoration-none  d-flex align-items-start flex-column">
+                        Twitter
+                    </a>
+                </div>
+                <div class="footer-location text-decoration-none  col-md-3 mb-4">
+                    <h5 class="text-white">Branches</h5>
+                    <p class="text-secondary footer-location">Cairo,Nasr City</p>
+                    <p class="text-secondary footer-location">Alexandria,El-Agamy</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
