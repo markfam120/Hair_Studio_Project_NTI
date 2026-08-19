@@ -18,7 +18,7 @@ body {
     height: 100vh;
 }
 
-/* ------- NAVBAR ------- */
+/* ------- START NAVBAR ------- */
 
 .navbar {
     width: 100%;
@@ -96,8 +96,9 @@ body {
 .btn:hover {
     background-color: #dec083;
 }
+/* ------- END NAVBAR ------- */
 
-/* -------- HOME PAGE -------- */
+/* -------- Start HOME PAGE -------- */
 .home2 {
     color: #d29b2d;
     font-size: 20px;
@@ -176,6 +177,7 @@ body {
         height: 100% !important;
     }
 }
+/* -------- END HOME PAGE -------- */
 
 /*start services */
 /* 
@@ -238,7 +240,7 @@ body {
 }
  */
 /* end services */
-/* start footer */
+/* ------- START FOOTER ------- */
 .footer {
     background-color: black;
     padding: 20px 0px;
@@ -263,7 +265,7 @@ body {
     color: rgb(223, 223, 75) !important;
 }
 
-/* end footer */
+/* ------- END FOOTER ------- */
 @media (max-width: 900px) {
 
     .navbar {

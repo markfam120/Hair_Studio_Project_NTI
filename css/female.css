@@ -1,7 +1,7 @@
 body {
     background-color: #f4efe4;
 }
-/* ------- NAVBAR ------- */
+/* ------- START NAVBAR ------- */
 
 .navbar {
     width: 100%;
@@ -80,7 +80,9 @@ body {
     background-color: #dec083;
 }
 
-/* Hero */
+/* ------- END NAVBAR ------- */
+
+/* ------- START HERO ------- */
 .hero {
     position: relative;
 
@@ -92,6 +94,7 @@ body {
 
     overflow: hidden;
 }
+
 
 
 /* 
@@ -270,9 +273,9 @@ body {
 
     border-color: #333;
 }
+/* ------- END HERO ------- */
 
-
-/* start footer */
+/* ------- START FOOTER ------- */
 .footer {
     background-color: black;
     padding: 20px 0px;
@@ -297,7 +300,7 @@ body {
     color: rgb(223, 223, 75) !important;
 }
 
-/* end footer */
+/* ------- END FOOTER ------- */
 
 
 /* 
