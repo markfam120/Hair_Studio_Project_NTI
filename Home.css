@@ -1,144 +1,288 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)),
-        url("./images/mo.png");
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+    min-height: 70vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.8)),
+        url("images/about-hero.jpg");
 
     background-size: cover;
     background-position: center;
 
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.home {
-    min-height: 100vh;
     text-align: center;
-    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 40px;
-    margin-top: 40px;
+.hero-content .small-title {
+    color: #d4af37;
+    letter-spacing: 5px;
+    font-size: 100px;
     margin-bottom: 15px;
 }
 
-.yellow {
-    color: #d29b2d;
+.hero-content h1 {
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+
+.hero-content h1 span {
+    color: #d4af37;
+}
+
+.hero-content p:last-child {
+    font-size: 20px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   COMMON
+========================= */
+
+.section-title {
+    color: #d4af37;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 26px;
-    margin: 10px 0;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
 }
 
-h3 {
-    font-weight: normal;
-    line-height: 1.6;
+p {
+    color: #cfcfcf;
 }
 
-.description {
-    max-width: 750px;
-    margin: 20px auto;
-    font-size: 18px;
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: center;
 }
 
-.buttons {
-    margin: 30px 0;
+.about-image img {
+    width: 700px;
+    height: auto;
+    object-fit: fill;
+
+    transform: translateX(-40px);
+
 }
 
-.button {
-    display: inline-block;
-    background-color: #d29b2d;
-    color: #111;
-    padding: 15px 25px;
-    margin: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.about-content p {
+    margin-bottom: 18px;
 }
 
-.button:hover {
-    background-color: white;
+.about-content strong {
+    color: white;
 }
 
-/* ===== Services Section ===== */
-.services {
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 60px 20px;
-    text-align: center;
-}
+.philosophy {
+    min-height: 500px;
 
-.services h2 {
-    margin-bottom: 10px;
-}
-
-.services-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    max-width: 1000px;
-    margin: 40px auto 0;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.8)),
+        url("images/philosophy.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 
-.service-card {
-    background-color: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(210, 155, 45, 0.4);
-    border-radius: 8px;
-    padding: 30px 20px;
-    width: 260px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+.philosophy-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 30px;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    background-color: rgba(210, 155, 45, 0.15);
+.philosophy h2 {
+    font-size: 52px;
 }
 
-.service-card h3.title {
-    color: #d29b2d;
-    font-weight: bold;
+.philosophy p:last-child {
+    max-width: 600px;
+}
+
+
+.why-us {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.feature {
+    border-top: 1px solid #333;
+    padding-top: 25px;
+}
+
+.number {
+    color: #d4af37;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-.service-card p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin: 0;
+.feature p {
+    font-size: 14px;
 }
+
+.vision {
+    background-color: #111;
+
+    padding: 100px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.vision-image img {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.vision-content {
+    max-width: 550px;
+}
+
+.vision-content p {
+    margin-bottom: 18px;
+}
+
+.final-message {
+    text-align: center;
+    padding: 110px 30px;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.final-message h2 {
+    font-size: 48px;
+}
+
+.final-message h2 span {
+    color: #d4af37;
+}
+
+.final-message strong {
+    display: block;
+    margin-top: 20px;
+    color: #d4af37;
+}
+
+@media (max-width: 900px) {
+
+    .about-section,
+    .vision {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services-container,
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .philosophy h2 {
+        font-size: 40px;
+    }
+}
+
 
 @media (max-width: 600px) {
 
-    h1 {
-        font-size: 28px;
+    .about-hero {
+        min-height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
     }
 
     h2 {
-        font-size: 21px;
+        font-size: 32px;
     }
 
-    h3 {
-        font-size: 17px;
+    .services-container,
+    .features {
+        grid-template-columns: 1fr;
     }
 
-    .description {
-        font-size: 16px;
+    .about-section,
+    .vision,
+    .why-us,
+    .services-section {
+        padding: 70px 20px;
     }
 
-    .button {
-        padding: 12px 18px;
+    .about-image img,
+    .vision-image img {
+        height: 400px;
     }
 
-    .service-card {
-        width: 100%;
-        max-width: 320px;
+    .final-message h2 {
+        font-size: 34px;
     }
 }
