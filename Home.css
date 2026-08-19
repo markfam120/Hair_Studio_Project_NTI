@@ -42,7 +42,7 @@ body {
 }
 .image-Logo {
     
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .center-nav {
@@ -154,8 +154,9 @@ body {
   
 }
 @media (min-width: 300px) and (max-width:900px){
-    .hero-left ,.width-self ,.right-nav ,.navbar ,body{
+    .hero-left ,.width-self ,.right-nav ,.navbar ,body ,.nav-links ,.btn ,.home1 ,.home2 ,.home3 ,.home4 ,.btn-service{
         width: 100% !important;
+        height: 100% !important;
     }
 }
 
