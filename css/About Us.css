@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 5px;
-  background: linear-gradient(90deg, #f3e2da 0%, #e8d0c2 50%, #d29b2d 150%);
+  background-color: #f4ecd8;
   position: sticky;
   top: 0;
   z-index: 1000;
