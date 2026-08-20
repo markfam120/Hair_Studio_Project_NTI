@@ -6,16 +6,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0d0d0d;
-  color: white;
+  background-color: #f3e2da;
+  color: #1a1a1a;
   line-height: 1.7;
 }
-
-/* ------- NAVBAR ------- */
 
 .navbar {
   width: 100%;
@@ -24,7 +23,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 5px;
-  background-color: #f4ecdc;
+  background-color: #f4ecd8;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -32,7 +31,6 @@ body {
 
 .container {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -69,6 +67,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 50px;
 }
 
 .btn {
@@ -93,52 +92,43 @@ body {
   background-color: #dec083;
 }
 
-/* =========================
-   HERO
-========================= */
-
 .about-hero {
-  min-height: 70vh;
-
+  min-height: auto;
+  padding: 100px 30px 40px;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)),
+    linear-gradient(rgba(243, 226, 218, 0.75), rgba(243, 226, 218, 0.9)),
     url("images/about-hero.jpg");
-
   background-size: cover;
   background-position: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
 }
 
 .hero-content .small-title {
-  color: #d4af37;
+  color: #d29b2d;
   letter-spacing: 5px;
-  font-size: 100px;
+  font-size: 35px;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
 .hero-content h1 {
   font-size: 70px;
   letter-spacing: 3px;
+  color: #1a1a1a;
 }
 
 .hero-content h1 span {
-  color: #d4af37;
+  color: #d29b2d;
 }
 
 .hero-content p:last-child {
   font-size: 20px;
-  color: #ddd;
+  color: #444;
   margin-top: 10px;
 }
-
-/* =========================
-   COMMON
-========================= */
 
 .section-title {
   color: #d4af37;
@@ -155,22 +145,16 @@ h2 {
 }
 
 p {
-  color: #cfcfcf;
+  color: #444;
 }
-
-/* =========================
-   ABOUT
-========================= */
 
 .about-section {
   max-width: 1200px;
   margin: auto;
   padding: 100px 30px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
-
   align-items: center;
 }
 
@@ -178,7 +162,6 @@ p {
   width: 700px;
   height: auto;
   object-fit: fill;
-
   transform: translateX(-40px);
 }
 
@@ -187,21 +170,14 @@ p {
 }
 
 .about-content strong {
-  color: white;
+  color: #111;
 }
 
 .philosophy {
   min-height: 500px;
-
   display: flex;
   align-items: center;
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url("images/philosophy.jpg");
-
-  background-size: cover;
-  background-position: center;
+  background-color: #f3e2da;
 }
 
 .philosophy-content {
@@ -212,6 +188,11 @@ p {
 
 .philosophy h2 {
   font-size: 52px;
+  color: #1a1a1a;
+}
+
+.philosophy p {
+  color: #444;
 }
 
 .philosophy p:last-child {
@@ -221,7 +202,12 @@ p {
 .why-us {
   max-width: 1200px;
   margin: auto;
+  text-align: center;
   padding: 100px 30px;
+}
+
+.section-heading {
+  margin-bottom: 50px;
 }
 
 .features {
@@ -231,7 +217,7 @@ p {
 }
 
 .feature {
-  border-top: 1px solid #333;
+  border-top: 1px solid #ccc;
   padding-top: 25px;
 }
 
@@ -244,6 +230,7 @@ p {
 .feature h3 {
   font-size: 20px;
   margin-bottom: 12px;
+  color: #111;
 }
 
 .feature p {
@@ -251,14 +238,12 @@ p {
 }
 
 .vision {
-  background-color: #111;
-
+  background-color: #f3e2da;
+  color: #1a1a1a;
   padding: 100px 30px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
-
   align-items: center;
 }
 
@@ -273,20 +258,25 @@ p {
   max-width: 550px;
 }
 
+.vision h2 {
+  color: #1a1a1a;
+}
+
 .vision-content p {
   margin-bottom: 18px;
+  color: #444;
 }
 
 .final-message {
   text-align: center;
   padding: 110px 30px;
-
   max-width: 900px;
   margin: auto;
 }
 
 .final-message h2 {
   font-size: 48px;
+  color: #111;
 }
 
 .final-message h2 span {
@@ -300,6 +290,7 @@ p {
 }
 
 @media (max-width: 900px) {
+
   .about-section,
   .vision {
     grid-template-columns: 1fr;
@@ -322,7 +313,7 @@ p {
 
 @media (max-width: 600px) {
   .about-hero {
-    min-height: 60vh;
+    padding: 60px 20px 30px;
   }
 
   .hero-content h1 {
@@ -341,7 +332,7 @@ p {
   .about-section,
   .vision,
   .why-us,
-  .services-section {
+  .philosophy-content {
     padding: 70px 20px;
   }
 
