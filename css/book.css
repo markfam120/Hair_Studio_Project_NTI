@@ -70,3 +70,78 @@ body {
   font-size: 0.8rem;
   color: var(--muted);
 }
+.box {
+    background: #f4f0e7;
+    border: 1px solid #ddd5c7;
+    border-radius: 8px;
+    padding: 12px;
+    min-height: 60px;
+}
+
+.box.active {
+    border: 2px solid #bd8640;
+    background: #fcf8ef;
+}
+.box:hover{
+    color :  #9c6a38;
+}
+
+.box b,  
+.box small {  /* تحت بعض */
+     display: block; 
+}
+
+.box b {
+    font-size: 15px;
+}
+
+.box small {
+    color: #777;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.form-control,
+.time {
+    background: #f4f0e7;
+    border: 1px solid #ddd5c7;
+    border-radius: 7px;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.time {
+    width: 100%;
+}
+.time:hover{
+    color: #9c6a38;
+}
+
+.contact {
+    background: linear-gradient(135deg, #493722, #1b1712);
+}
+
+.contact h4 {
+    color: #d5a15b;
+}
+
+.confirm {
+    background: #bd8640;
+    color: white;
+    border: none;
+    padding: 12px;
+}
+
+.confirm:hover {
+    background: #a87335;
+    color: white;
+}
+
+h2, h4 {
+    font-family: sans-serif; /* simple text */
+}
+
+h6 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
