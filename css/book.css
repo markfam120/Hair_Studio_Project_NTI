@@ -1,0 +1,253 @@
+:root {
+  --cream: #f3efe6;
+  --cream-2: #eee8db;
+  --gold: #b8814a;
+  --gold-dark: #9c6a38;
+  --ink: #241d16;
+  --brown-panel: #231a12;
+  --muted: #7a715f;
+  --card: #f7f4ec;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+/* ------- START NAVBAR ------- */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color: #f4ecdc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.center-nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #d29b2d;
+}
+
+.right-nav {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 13px 15px;
+    display: inline-flex;
+    background-color: #d29b2d;
+    color: #040404;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 2px;
+    width: 260px;
+    height: 50px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.btn i {
+    padding-top: 3px;
+}
+
+.btn:hover {
+    background-color: #dec083;
+}
+/* ------- END NAVBAR ------- */
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 4.5rem 1rem 3rem;
+}
+.eyebrow {
+  letter-spacing: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gold-dark);
+  margin-bottom: 0.9rem;
+}
+.eyebrow::before,
+.eyebrow::after {
+  content: "—";
+  margin: 0 0.6rem;
+  color: var(--gold-dark);
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--ink);
+}
+.hero h1 em {
+  color: var(--gold-dark);
+  font-style: italic;
+  font-weight: 600;
+}
+.hero p.lead {
+  max-width: 640px;
+  margin: 1.1rem auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fbf6ea;
+  border: 1px solid #e7dcc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 0 auto 0.6rem;
+}
+.stat-num {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.box {
+    background: #f4f0e7;
+    border: 1px solid #ddd5c7;
+    border-radius: 8px;
+    padding: 12px;
+    min-height: 60px;
+}
+
+.box.active {
+    border: 2px solid #bd8640;
+    background: #fcf8ef;
+}
+.box:hover{
+    color :  #9c6a38;
+}
+
+.box b,  
+.box small {  /* تحت بعض */
+     display: block; 
+}
+
+.box b {
+    font-size: 15px;
+}
+
+.box small {
+    color: #777;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.form-control,
+.time {
+    background: #f4f0e7;
+    border: 1px solid #ddd5c7;
+    border-radius: 7px;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.time {
+    width: 100%;
+}
+.time:hover{
+    color: #9c6a38;
+}
+
+.contact {
+    background: linear-gradient(135deg, #493722, #1b1712);
+}
+
+.contact h4 {
+    color: #d5a15b;
+}
+
+.confirm {
+    background: #bd8640;
+    color: white;
+    border: none;
+    padding: 12px;
+}
+
+.confirm:hover {
+    background: #a87335;
+    color: white;
+}
+
+h2, h4 {
+    font-family: sans-serif; /* simple text */
+}
+
+h6 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+/* ------- START FOOTER ------- */
+.footer {
+    background-color: black;
+    padding: 20px 0px;
+    margin-top: auto;
+    border: radius 30px;
+    ;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: rgb(223, 223, 75) !important;
+}
+
+.footer-location {
+    text-decoration: none;
+}
+
+.footer-location:hover {
+    color: rgb(223, 223, 75) !important;
+}
+
+/* ------- END FOOTER ------- */
