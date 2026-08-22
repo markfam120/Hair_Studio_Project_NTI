@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url(./contact-us.jpeg);
+    background-image: url("../photo/contact-us.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: center;
