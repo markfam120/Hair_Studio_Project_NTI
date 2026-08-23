@@ -3,6 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg-color: #f3e2da;
+  --navbar-color: #f4ecd8;
+  --text-color: #111111;
+  --paragraph-color: #444444;
+  --gold-color: #d29b2d;
+  --button-bg: #d29b2d;
+  --button-text: #040404;
+}
+
+[data-bs-theme="dark"] {
+  --bg-color: #121212;
+  --navbar-color: #1c1c1c;
+  --text-color: #f4efe4;
+  --paragraph-color: #cfcfcf;
+  --gold-color: #d29b2d;
+  --button-bg: #d29b2d;
+  --button-text: #111111;
+}
 
 html {
   scroll-behavior: smooth;
@@ -10,19 +29,26 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  color: #f4efe4;
-  background-image: url(../photo/bg.jpeg);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.15)
+        ),
+        url(../photo/bg.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  
 }
 
 /* ------- START NAVBAR ------- */
 
 .navbar {
   min-height: 70px;
-  background-color: #f4ecdc;
+  background-color: var(--navbar-color);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -38,7 +64,7 @@ body {
 }
 
 .nav-links li a {
-  color: rgb(7, 7, 7);
+    color: var(--text-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -46,7 +72,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #d29b2d;
+    color: var(--gold-color);
 }
 
 .right-nav {
@@ -77,9 +103,30 @@ body {
 .btn:hover {
   background-color: #dec083;
 }
+.dropdown-menu {
+    background-color: var(--navbar-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: var(--gold-color);
+}
 /* ------- END NAVBAR ------- */
 
 /* -------- Start HOME PAGE -------- */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: calc(100vh - 70px);
+
+    text-align: left;
+}
 .home2 {
   color: #d29b2d;
   font-size: 20px;
@@ -87,20 +134,20 @@ body {
 
 .home1 {
   margin: 0;
-  color: #111;
+  color: var(--text-color);
   margin: 0;
   font-size: 70px;
 }
 
 .home3 {
   margin: 0;
-  color: #d29b2d;
+  color: var(--gold-color);
   margin: 0;
   font-size: 70px;
 }
 
 .home4 {
-  color: #111;
+  color: var(--paragraph-color);
   font-size: 20px;
 }
 
@@ -329,4 +376,23 @@ body {
     width: 100%;
     max-width: 320px;
   }
+}
+
+/* dark mode  */
+[data-bs-theme="dark"] body {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url(../photo/bg.jpeg);
+}
+
+#themeButton {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+#themeButton:hover {
+    color: var(--gold-color);
 }
