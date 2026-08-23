@@ -288,6 +288,32 @@ p {
   margin-top: 20px;
   color: #d4af37;
 }
+/* start footer */
+.footer {
+    background-color: black;
+    padding: 20px 0px;
+    margin-top: auto;
+    border: radius 30px;
+    ;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: rgb(223, 223, 75) !important;
+}
+
+.footer-location {
+    text-decoration: none;
+}
+
+.footer-location:hover {
+    color: rgb(223, 223, 75) !important;
+}
+
+/* end footer */
 
 @media (max-width: 900px) {
 
