@@ -1,3 +1,5 @@
+/* start navbar  */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,24 +8,12 @@
 
 html {
     scroll-behavior: smooth;
-    min-height: 100%;
 }
 
 body {
-    background-image: url("../photo/contact-us.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: center;
-    height: 100vh;
-}
+    font-family: Arial, sans-serif;
+     background-color: #f4ede4;
 
-@media (min-width: 300px) and (max-width:900px) {
-    body {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 30vh;
-    }
 }
 
 /* ------- NAVBAR ------- */
@@ -35,7 +25,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 5px;
-    background-color: #e1c489;
+    background-color: #f4ecdc;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -105,135 +95,202 @@ body {
     background-color: #dec083;
 }
 
-/* -------- HOME PAGE -------- */
-.home1 {
-    margin: 0;
-    color: #faf9f9;
-    font-size: 80px;
-    font-family: "Times New Roman", serif;
-    white-space: nowrap;
-    font-weight: bold;
+/* end navbar */
 
+/* 
+   TEAM SECTION
+ */
+
+.team-section {
+    width: 100%;
+    padding: 60px 30px;
+    background-color: #f4efe4;
 }
 
-.home4 {
-    color: #fafafa;
-    font-size: 20px;
-    padding-left: 20px;
-    white-space: nowrap;
-    font-weight: bold;
-    margin-top: 20px;
+.team-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.line {
+
+
+/* 
+   TITLE
+ */
+
+.section-title {
+    text-align: center;
+    color: #d29b2d;
+    font-size: 38px;
+    font-weight: bolder;
+    margin: 0 0 60px;
+}
+
+
+/* 
+   TEAM GRID
+ */
+
+.team-grid {
+    display: grid;
+
+    /* 4 cards in one row */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 60px 30px;
+
+    width: 100%;
+}
+
+
+/* 
+   TEAM CARD
+ */
+
+.team-member {
+    text-align: center;
+}
+
+
+/* 
+   TEAM IMAGE
+ */
+
+.team-photo {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
     display: block;
-    width: 150px;
-    height: 5px;
-    background-color: #4c3403;
-    margin-left: 15px;
-    border-radius: 5px;
+
+    margin: 0 auto 15px;
+
+    transition: 0.3s ease;
 }
 
-@media (min-width: 300px) and (max-width:900px) {
-    .hero-left,
-    .width-self,
-    .right-nav,
-    .navbar,
-    .nav-links,
-    .btn,
-    .home1,
-    .home4,
-    .btn-service {
-        width: 100% !important;
+
+/* Hover */
+
+.team-member:hover .team-photo {
+    transform: scale(1.05);
+}
+
+
+/* 
+   NAME
+ */
+
+.team-name {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #0c0c0b;
+}
+
+
+/* 
+   ROLE
+ */
+
+.team-role {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #d29b2d;
+}
+
+
+/* 
+   TABLET
+   2 cards per row
+ */
+
+@media (max-width: 768px) {
+
+    .team-section {
+        padding: 50px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 45px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px 20px;
+    }
+
+    .team-photo {
+        width: 150px;
+        height: 150px;
     }
 }
 
-.icons-home {
-    color: #111;
-    white-space: nowrap;
-}
-/* end home page */
 
-/* start contact-us */
+/* 
+   MOBILE
+   2 cards per row
+ */
 
-.contact-section {
-  background-color: #f3e2d5;
-}
+@media (max-width: 576px) {
 
-.section-title h4 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-  margin-top: 0 ;
-  padding-top: 0 ;
-}
+    .team-section {
+        padding: 40px 15px;
+    }
 
-.title-line {
-  width: 80px;
-  height: 2px;
-  background-color: #cbb398;
-}
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
 
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 10px;
+    }
 
-.icon-box {
-  width: 42px;
-  height: 42px;
-  background-color: #000;
-  color: #d4a373;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+    .team-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-name {
+        font-size: 16px;
+    }
+
+    .team-role {
+        font-size: 13px;
+    }
 }
 
 
-.social-links a {
-  color: #000;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+/* 
+   VERY SMALL MOBILE
+ */
+
+@media (max-width: 380px) {
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-photo {
+        width: 105px;
+        height: 105px;
+    }
+
+    .team-name {
+        font-size: 15px;
+    }
 }
 
-.social-links a:hover {
-  color: #cbb398;
-}
 
-
-.custom-input {
-  background-color: #f0e7df;
-  border: 1px solid transparent;
-  border-radius: 0;
-  padding: 10px 15px;
-  font-size: 0.9rem;
-}
-
-.custom-input:focus {
-  background-color: #ebdcd0;
-  border-color: #cbb398;
-  box-shadow: none;
-}
-
-.custom-btn {
-  background-color: #111;
-  color: #cbb398;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border: none;
-}
-
-.custom-btn:hover {
-  background-color: #2b2b2b;
-  color: #fff;
-}
-
-.art-image {
-  width: 500px;
-  height: 500px;
-}
-/* end contact-us */
 /* start footer */
 .footer {
     background-color: black;
@@ -367,3 +424,4 @@ body {
         max-width: 320px;
     }
 }
+/* end footer */
