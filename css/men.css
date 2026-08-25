@@ -440,9 +440,156 @@ img {
         justify-content: center;
     }
 }
+/* =================== RESPONSIVE =================== */
 
-@media (max-width: 767px) {
+/* ---------- Large Tablet ---------- */
+@media (max-width: 991px) {
 
+    .center-nav {
+        width: auto;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .right-nav {
+        width: auto;
+    }
+
+    .btn {
+        width: auto;
+        height: auto;
+        padding: 11px 14px;
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero .row {
+        gap: 30px;
+    }
+
+    .hero-text {
+        flex: 1 1 400px;
+    }
+
+    .hero-image {
+        flex: 1 1 350px;
+    }
+
+    /* Services */
+    .men-services {
+        padding: 80px 0 100px;
+    }
+
+    .services-heading {
+        margin-bottom: 45px;
+    }
+
+    .services-heading h2 {
+        font-size: 42px;
+    }
+
+    /* 4 cards → 2 cards */
+    .men-services .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .hair-card img {
+        height: 280px;
+    }
+}
+
+
+/* ---------- Tablet / Small Devices ---------- */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 18px;
+    }
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 12px 15px;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .center-nav {
+        width: 100%;
+        justify-content: center;
+        order: 3;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    .right-nav {
+        width: auto;
+    }
+
+    .btn {
+        width: auto;
+        height: auto;
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .hero .row {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2.2rem, 8vw, 3rem);
+    }
+
+    /* Services */
     .men-services {
         padding: 70px 0 80px;
     }
@@ -456,11 +603,67 @@ img {
     }
 
     .hair-card img {
-        height: 300px;
+        height: 280px;
     }
 }
 
+
+/* ---------- Mobile ---------- */
 @media (max-width: 575px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 12px 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 9px 10px;
+        font-size: 11px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .gold-btn,
+    .outline-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 13px 20px;
+    }
+
+    /* Services */
+    .men-services {
+        padding: 60px 0 70px;
+    }
 
     .services-heading {
         margin-bottom: 40px;
@@ -470,7 +673,52 @@ img {
         font-size: 32px;
     }
 
-    .hair-card img {
-        height: 280px;
+    /* 2 cards → 1 card */
+    .men-services .row {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
+
+    .hair-card img {
+        height: 300px;
+    }
+
+    .hair-info {
+        padding: 20px 15px 22px;
+    }
+
+    .hair-info h3 {
+        font-size: 19px;
+    }
+
+    .hair-price {
+        font-size: 21px;
+    }
+
+
+
+/* ---------- Very Small Mobile ---------- */
+@media (max-width: 400px) {
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links li a {
+        font-size: 11px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .services-heading h2 {
+        font-size: 28px;
+    }
+
+    .hair-card img {
+        height: 260px;
+    }
+}
+
 }

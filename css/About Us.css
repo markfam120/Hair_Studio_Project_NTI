@@ -290,84 +290,272 @@ p {
 }
 /* start footer */
 .footer {
-    background-color: black;
-    padding: 20px 0px;
-    margin-top: auto;
-    border: radius 30px;
-    ;
+  background-color: black;
+  padding: 20px 0px;
+  margin-top: auto;
+  border: radius 30px;
+  ;
 }
 
 .footer-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-link:hover {
-    color: rgb(223, 223, 75) !important;
+  color: rgb(223, 223, 75) !important;
 }
 
 .footer-location {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-location:hover {
-    color: rgb(223, 223, 75) !important;
+  color: rgb(223, 223, 75) !important;
 }
-
 /* end footer */
+/* =================== RESPONSIVE =================== */
 
+/* ---------- Tablet ---------- */
 @media (max-width: 900px) {
 
+  /* Navbar */
+  .navbar {
+    height: auto;
+    min-height: 70px;
+    padding: 12px 15px;
+  }
+
+  .navbar .container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .center-nav {
+    width: auto;
+  }
+
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .right-nav {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .btn {
+    width: auto;
+    height: auto;
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  /* About + Vision */
   .about-section,
   .vision {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .services-container,
+  /* About image */
+  .about-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    transform: none;
+    object-fit: cover;
+  }
+
+  /* Features */
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Hero */
   .hero-content h1 {
     font-size: 55px;
   }
 
+  .hero-content .small-title {
+    font-size: 28px;
+  }
+
+  /* Philosophy */
   .philosophy h2 {
     font-size: 40px;
   }
+
+  /* Vision image */
+  .vision-image img {
+    height: 450px;
+  }
 }
 
+
+/* ---------- Mobile ---------- */
 @media (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 12px 10px;
+  }
+
+  .navbar .container {
+    justify-content: center;
+  }
+
+  .center-nav {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+
+  .nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li a {
+    font-size: 12px;
+  }
+
+  .right-nav {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .btn {
+    width: auto;
+    height: auto;
+    padding: 9px 11px;
+    font-size: 11px;
+  }
+
+  /* Hero */
   .about-hero {
-    padding: 60px 20px 30px;
+    padding: 60px 20px 40px;
+    min-height: 400px;
+  }
+
+  .hero-content .small-title {
+    font-size: 20px;
+    letter-spacing: 3px;
   }
 
   .hero-content h1 {
     font-size: 42px;
+    letter-spacing: 1px;
   }
 
+  .hero-content p:last-child {
+    font-size: 16px;
+  }
+
+  /* General headings */
   h2 {
     font-size: 32px;
   }
 
-  .services-container,
-  .features {
-    grid-template-columns: 1fr;
-  }
-
+  /* Sections */
   .about-section,
   .vision,
   .why-us,
-  .philosophy-content {
+  .philosophy-content,
+  .final-message {
     padding: 70px 20px;
   }
 
-  .about-image img,
+  /* About image */
+  .about-image img {
+    width: 100%;
+    height: auto;
+    transform: none;
+    object-fit: cover;
+  }
+
+  /* Features */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .feature {
+    padding-top: 20px;
+  }
+
+  /* Philosophy */
+  .philosophy {
+    min-height: auto;
+  }
+
+  .philosophy h2 {
+    font-size: 34px;
+  }
+
+  /* Vision image */
   .vision-image img {
+    width: 100%;
     height: 400px;
+    object-fit: cover;
+  }
+
+  /* Final message */
+  .final-message h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 400px) {
+
+  .nav-links {
+    gap: 7px;
+  }
+
+  .nav-links li a {
+    font-size: 11px;
+  }
+
+  .btn {
+    padding: 8px 9px;
+    font-size: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-content .small-title {
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .philosophy h2 {
+    font-size: 30px;
+  }
+
+  .vision-image img {
+    height: 300px;
   }
 
   .final-message h2 {
-    font-size: 34px;
+    font-size: 29px;
   }
 }
