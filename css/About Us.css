@@ -15,7 +15,7 @@ body {
   color: #1a1a1a;
   line-height: 1.7;
 }
-
+/* start navbar*/
 .navbar {
   width: 100%;
   height: 70px;
@@ -61,7 +61,7 @@ body {
 .nav-links li a:hover {
   color: #d29b2d;
 }
-
+/* nabvar button */
 .right-nav {
   width: 10%;
   display: flex;
@@ -91,7 +91,10 @@ body {
 .btn:hover {
   background-color: #dec083;
 }
+/* end navbar*/
 
+
+/* start hero section*/
 .about-hero {
   min-height: auto;
   padding: 100px 30px 40px;
@@ -147,7 +150,8 @@ h2 {
 p {
   color: #444;
 }
-
+/* end hero section*/
+/*  start about section*/
 .about-section {
   max-width: 1200px;
   margin: auto;
@@ -172,7 +176,8 @@ p {
 .about-content strong {
   color: #111;
 }
-
+/* end section about*/
+/*  start section philospohy*/
 .philosophy {
   min-height: 500px;
   display: flex;
@@ -198,7 +203,8 @@ p {
 .philosophy p:last-child {
   max-width: 600px;
 }
-
+/* end section philosophy*/
+/* start section why choose us*/
 .why-us {
   max-width: 1200px;
   margin: auto;
@@ -236,7 +242,8 @@ p {
 .feature p {
   font-size: 14px;
 }
-
+/* end section why choose us*/
+/* start section vision*/
 .vision {
   background-color: #f3e2da;
   color: #1a1a1a;
@@ -266,6 +273,8 @@ p {
   margin-bottom: 18px;
   color: #444;
 }
+/* end section vision*/
+/* start section final message*/
 
 .final-message {
   text-align: center;
@@ -288,6 +297,7 @@ p {
   margin-top: 20px;
   color: #d4af37;
 }
+/* end section final message*/
 /* start footer */
 .footer {
   background-color: black;
