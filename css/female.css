@@ -79,6 +79,18 @@ body {
 .btn:hover {
     background-color: #dec083;
 }
+.dropdown-menu {
+    background-color: var(--navbar-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: var(--gold-color);
+}
 
 /* ------- END NAVBAR ------- */
 
@@ -309,6 +321,7 @@ body {
 
 @media (max-width: 900px) {
 
+
     .navbar {
         padding: 0 3%;
     }
@@ -338,6 +351,15 @@ body {
  */
 
 @media (max-width: 650px) {
+/* .hero {
+        height: calc(100vh - 70px);
+        min-height: 650px;
+    }
+
+    .bg-female img {
+       
+        object-position: 70% center;
+    } */
 
     .navbar {
         height: 70px;
@@ -369,6 +391,7 @@ body {
         width: 80%;
 
         top: 45%;
+        font-weight: bold;
     }
 
 
