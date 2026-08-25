@@ -1,239 +1,273 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Book Now</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/book.css" />
-</head>
+  </head>
 
-<body>
-    
-
+  <body>
     <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <img
+          src="./photo/logo.png"
+          alt="Logo"
+          width="170px"
+          height="110px"
+          class="image-Logo navbar-brand"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="center-nav collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav-links navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./About Us.html">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="./Teamv.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="./female.html">Women</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./contact-us.html">Contact Us</a>
+            </li>
+          </ul>
 
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container">
-            <img src="./photo/logo.png" alt="Logo" width="170px" height="110px" class="image-Logo navbar-brand">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+          <div class="right-nav text-center d-flex align-items-center gap-2">
+            <button
+              id="themeButton"
+              class="btn btn-outline-dark border-0"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
+              <i id="themeIcon" class="bi bi-moon-fill"> </i>
             </button>
-            <div class="center-nav collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class=" nav-links navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./About Us.html">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="./Teamv.html">Team</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            menu
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Men</a></li>
-                            <li><a class="dropdown-item" href="./female.html">Women</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./contact-us.html">Contact Us</a>
-                    </li>
-                </ul>
 
-                <div class="right-nav text-center d-flex align-items-center gap-2">
-
-                    <button id="themeButton" class="btn btn-outline-dark border-0" type="button"
-                        aria-label="Toggle dark mode">
-
-                        <i id="themeIcon" class="bi bi-moon-fill">
-                        </i>
-
-                    </button>
-
-                    <a href="./book.html" class="btn">
-                        <i class="fa-solid fa-calendar me-2"></i>
-                        BOOK APPOINTMENT
-                    </a>
-
-                </div>
-            </div>
-
-
+            <a href="./book.html" class="btn">
+              <i class="fa-solid fa-calendar me-2"></i>
+              BOOK APPOINTMENT
+            </a>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- end navbar -->
     <header class="hero container">
-        <div class="eyebrow">HAIR &amp; BEAUTY STUDIO</div>
-        <h1>Your Beauty <em>Starts Here</em></h1>
-        <p class="lead">
-            Choose your service, your favorite stylist, and a time that suits you —
-            we'll take care of the rest in a luxurious, relaxing setting.
-        </p>
+      <div class="eyebrow">HAIR &amp; BEAUTY STUDIO</div>
+      <h1>Your Beauty <em>Starts Here</em></h1>
+      <p class="lead">
+        Choose your service, your favorite stylist, and a time that suits you —
+        we'll take care of the rest in a luxurious, relaxing setting.
+      </p>
 
-        <div class="row justify-content-center mt-5 g-4">
-            <div class="col-6 col-md-3">
-                <div class="stat-icon">🏅</div>
-                <div class="stat-num">10+</div>
-                <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-icon">👤</div>
-                <div class="stat-num">2500+</div>
-                <div class="stat-label">Happy Clients</div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-icon">✂️</div>
-                <div class="stat-num">15+</div>
-                <div class="stat-label">Expert Stylists</div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-num">100%</div>
-                <div class="stat-label">Quality Service</div>
-            </div>
+      <div class="row justify-content-center mt-5 g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-icon">🏅</div>
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years Experience</div>
         </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-icon">👤</div>
+          <div class="stat-num">2500+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-icon">✂️</div>
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Expert Stylists</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Quality Service</div>
+        </div>
+      </div>
     </header>
-    <section class="py-5" style="background:-cream">
-        <div class="container">
-            <div class="row g-4">
+    <section class="py-5" style="background: -cream">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Booking Details -->
+          <div class="col-lg-7">
+            <div class="bg-white rounded-4 p-4 shadow-sm">
+              <h2>Booking Details</h2>
+              <p class="text-secondary small">
+                Fill in the details below and we'll confirm your appointment
+                within minutes.
+              </p>
 
-                <!-- Booking Details -->
-                <div class="col-lg-7">
-                    <div class="bg-white rounded-4 p-4 shadow-sm">
-
-                        <h2>Booking Details</h2>
-                        <p class="text-secondary small">
-                            Fill in the details below and we'll confirm your appointment within minutes.
-                        </p>
-
-                        <!-- Services -->
-                        <h6> 1- Choose a Service</h6>
-                        <div class="row g-2 mb-4">
-                            <div class="col-6">
-                                <div class="box "><b>Haircut </b><small>45 min · $35</small></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="box"><b>Color & Highlights</b><small>60 min · $90</small></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="box"><b>Hair Styling</b><small>60 min · $50</small></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="box"><b>All of the Services</b><small>120 min . $200</small></div>
-                            </div>
-                        </div>
-
-                        <!-- Stylist -->
-                        <h6>2- Choose Your Stylist</h6>
-                        <div class="row g-2 mb-4">
-                            <div class="col-6">
-                                <div class="box "><b>Maya Hassan</b><small>Styling Expert</small></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="box"><b>Nada Adel</b><small>Color Specialist</small></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="box"><b>Sara Kamal</b><small>Cut stylist</small></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="box"><b>Any Available Stylist</b><small>Based on schedule</small></div>
-                            </div>
-                        </div>
-
-                        <!-- Date -->
-                        <h6>3- Date & Time</h6>
-                        <label>Date</label>
-                        <input type="date" class="form-control mb-3" value="2026-01-10">
-
-                        <label>Available Time</label>
-                        <div class="row g-2 mb-4">
-                            <div class="col-3"><button class="time">10:00 AM</button></div>
-                            <div class="col-3"><button class="time">11:00 AM</button></div>
-                            <div class="col-3"><button class="time">12:00 PM</button></div>
-                            <div class="col-3"><button class="time">01:00 PM</button></div>
-                            <div class="col-3"><button class="time">02:00 PM</button></div>
-                            <div class="col-3"><button class="time">03:00 PM</button></div>
-                            <div class="col-3"><button class="time">05:00 PM</button></div>
-                            <div class="col-3"><button class="time">06:00 PM</button></div>
-                        </div>
-
-                        <!-- Details -->
-                        <h6>4- Your Details</h6>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <input class="form-control" placeholder="Enter your name">
-                            </div>
-                            <div class="col-6">
-                                <input class="form-control" placeholder="Your Phone Number">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" rows="3"
-                                    placeholder="Any special request you'd like us to know about?"></textarea>
-                            </div>
-                        </div>
-
-                        <button class="btn confirm w-100 mt-3">
-                            📅 Confirm Booking
-                        </button>
-
-                        <p class="text-center text-secondary small mt-2">
-                            You'll receive a confirmation text within 15 minutes
-                        </p>
-
-                    </div>
+              <!-- Services -->
+              <h6>1- Choose a Service</h6>
+              <div class="row g-2 mb-4">
+                <div class="col-6">
+                  <div class="box">
+                    <b>Haircut </b><small>45 min · $35</small>
+                  </div>
                 </div>
-
-
-                <!-- Right Side -->
-                <div class="col-lg-5">
-
-                    <div class="contact text-white rounded-4 p-4 mb-3">
-                        <h4>Get in Touch</h4>
-                        <hr>
-                        📍 Address
-                        <br>
-                        <b>123 Nile Street, Downtown</b>
-                        <hr>
-                        📞 Phone
-                        <br>
-                        <b>+20 (555) 123-4567</b>
-                        <hr>
-                        ✉ Email
-                        <br>
-                        <b>book@melvn.com</b>
-                    </div>
-
-                    <div class="bg-white rounded-4 p-4 shadow-sm">
-                        <h4>Working Hours</h4>
-                        <div class="d-flex justify-content-between mt-4">
-                            <span>Sat – Thu</span>
-                            <b>10:00 AM – 9:00 PM</b>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>Friday</span>
-                            <b class="text-danger">Closed</b>
-                        </div>
-                    </div>
-
+                <div class="col-6">
+                  <div class="box">
+                    <b>Color & Highlights</b><small>60 min · $90</small>
+                  </div>
                 </div>
+                <div class="col-6">
+                  <div class="box">
+                    <b>Hair Styling</b><small>60 min · $50</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="box">
+                    <b>All of the Services</b><small>120 min . $200</small>
+                  </div>
+                </div>
+              </div>
 
+              <!-- Stylist -->
+              <h6>2- Choose Your Stylist</h6>
+              <div class="row g-2 mb-4">
+                <div class="col-6">
+                  <div class="box">
+                    <b>Maya Hassan</b><small>Styling Expert</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="box">
+                    <b>Nada Adel</b><small>Color Specialist</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="box">
+                    <b>Sara Kamal</b><small>Cut stylist</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="box">
+                    <b>Any Available Stylist</b><small>Based on schedule</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Date -->
+              <h6>3- Date & Time</h6>
+              <label>Date</label>
+              <input type="date" class="form-control mb-3" value="2026-01-10" />
+
+              <label>Available Time</label>
+              <div class="row g-2 mb-4">
+                <div class="col-3"><button class="time">10:00 AM</button></div>
+                <div class="col-3"><button class="time">11:00 AM</button></div>
+                <div class="col-3"><button class="time">12:00 PM</button></div>
+                <div class="col-3"><button class="time">01:00 PM</button></div>
+                <div class="col-3"><button class="time">02:00 PM</button></div>
+                <div class="col-3"><button class="time">03:00 PM</button></div>
+                <div class="col-3"><button class="time">05:00 PM</button></div>
+                <div class="col-3"><button class="time">06:00 PM</button></div>
+              </div>
+
+              <!-- Details -->
+              <h6>4- Your Details</h6>
+              <div class="row g-2">
+                <div class="col-6">
+                  <input class="form-control" placeholder="Enter your name" />
+                </div>
+                <div class="col-6">
+                  <input class="form-control" placeholder="Your Phone Number" />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="Any special request you'd like us to know about?"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button class="btn confirm w-100 mt-3">📅 Confirm Booking</button>
+
+              <p class="text-center text-secondary small mt-2">
+                You'll receive a confirmation text within 15 minutes
+              </p>
             </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-5">
+            <div class="contact text-white rounded-4 p-4 mb-3">
+              <h4>Get in Touch</h4>
+              <hr />
+              📍 Address
+              <br />
+              <b>123 Nile Street, Downtown</b>
+              <hr />
+              📞 Phone
+              <br />
+              <b>+20 (555) 123-4567</b>
+              <hr />
+              ✉ Email
+              <br />
+              <b>book@melvn.com</b>
+            </div>
+
+            <div class="bg-white rounded-4 p-4 shadow-sm">
+              <h4>Working Hours</h4>
+              <div class="d-flex justify-content-between mt-4">
+                <span>Sat – Thu</span>
+                <b>10:00 AM – 9:00 PM</b>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <span>Friday</span>
+                <b class="text-danger">Closed</b>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- start footer -->
     <footer class="bg-black text-white py-5 mt-auto">
@@ -243,9 +277,10 @@
                     <div class="d-flex align-items-center gap-2 mb-3">
                         <i class="bi bi-scissors text-warning fs-2 rotate-scissors"></i>
                         <div>
-                            <h3 class="text-warning mb-0 fs-4 fw-bold" style="font-family: Times New Roman, serif;">MELVN SALON</h3>
-                            <span class=" small d-block"
-                                style="font-size: 0.7rem; letter-spacing: 1.5px;">hair & beauty studio</span>
+                            <h3 class="text-warning mb-0 fs-4 fw-bold" style="font-family: Times New Roman, serif;">
+                                MELVN SALON</h3>
+                            <span class=" small d-block" style="font-size: 0.7rem; letter-spacing: 1.5px;">hair & beauty
+                                studio</span>
                         </div>
                     </div>
                     <p class="text-secondary small leading-relaxed pe-lg-2">
@@ -258,8 +293,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="./index.html"
                                 class="footer-link text-secondary text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="./services.html"
-                                class="footer-link text-secondary text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link text-secondary text-decoration-none">Services</a></li>
                         <li class="mb-2"><a href="./About Us.html" class="footer-link text-secondary text-decoration-none">About Us</a>
                         </li>
                         <li class="mb-2"><a href="./Teamv.html" class="footer-link text-secondary text-decoration-none">Team</a></li>
@@ -333,9 +367,10 @@
         </div>
     </footer>
     <!-- end footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

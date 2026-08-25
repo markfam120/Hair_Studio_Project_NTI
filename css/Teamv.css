@@ -16,7 +16,7 @@ body {
 
 }
 
-/* ------- NAVBAR ------- */
+/* ------- START NAVBAR ------- */
 
 .navbar {
     width: 100%;
@@ -31,7 +31,7 @@ body {
     z-index: 1000;
 }
 
-.container {
+.nav-container {
     display: flex;
 
     justify-content: space-between;
@@ -94,8 +94,7 @@ body {
 .btn:hover {
     background-color: #dec083;
 }
-
-/* end navbar */
+/* ------- END NAVBAR ------- */
 
 /* 
    TEAM SECTION
