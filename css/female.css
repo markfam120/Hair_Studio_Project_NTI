@@ -79,6 +79,18 @@ body {
 .btn:hover {
     background-color: #dec083;
 }
+.dropdown-menu {
+    background-color: var(--navbar-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: var(--gold-color);
+}
 
 /* ------- END NAVBAR ------- */
 

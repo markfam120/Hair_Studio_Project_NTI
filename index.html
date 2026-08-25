@@ -17,7 +17,6 @@
 <body>
 
     <!-- start navbar -->
-
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
             <img src="./photo/logo.png" alt="Logo" width="170px" height="110px" class="image-Logo navbar-brand">
@@ -35,7 +34,7 @@
                         <a href="./About Us.html">About</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="#services" >Services</a>
                     </li>
                     <li>
                         <a href="./Teamv.html">Team</a>
@@ -46,7 +45,7 @@
                             menu
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Men</a></li>
+                            <li><a class="dropdown-item" href="./men.html">Men</a></li>
                             <li><a class="dropdown-item" href="./female.html">Women</a></li>
                         </ul>
                     </li>
@@ -94,11 +93,11 @@
                         environment. </p>
 
                     <div class="btn-container">
-                        <a href="#" class="btn">
+                        <a href="./book.html" class="btn">
                             <i class="fa-solid fa-calendar me-2 "></i>
                             BOOK APPOINTMENT
                         </a>
-                        <a href="#services" class="btn-service">
+                        <a href="#hero" class="btn-service">
                             <i></i>
                             EXPLORE SERVICES <span class="arrow">&rarr;</span>
                         </a>
@@ -109,83 +108,105 @@
         </div>
 
     </section>
-
     <!--end Home page  -->
 
-    <!--start Services -->
-    <!--
-    <section class="services vh-100" id="services">
+    <!-- start services -->
+    <section id="services" class="d-flex align-items-center py-5 min-vh-100">
+        <div class="container">
+            <div class="text-center mb-5">
 
-        <h2>Our Services</h2>
-
-        <p>
-            Professional services designed for your style.
-        </p>
-
-
-        <div class="services-grid">
-
-            <div class="service-card">
-
-                <h3 class="title">
-                    Haircuts
-                </h3>
-
-                <p>
-                    Professional haircuts designed to match
-                    your style and personality.
+                <p class="text-uppercase text-secondary mb-2" style="letter-spacing: 5px;">
+                    Our Services
                 </p>
+
+                <h1 class="display-5 fw-normal">
+                    Choose Your Style
+                </h1>
 
             </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="position-relative overflow-hidden rounded-4 shadow-lg" style="
+                            height: 650px;
+                            background-image:
+                            url('./photo/men.jpeg');
+                            background-size: cover;
+                            background-position: center;
+                        ">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50">
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white p-4 p-md-5">
 
+                            <div class="fs-2 text-warning mb-2">
+                                ✂
+                            </div>
 
-   
-            <div class="service-card">
+                            <h2 class="display-3 fw-normal">
+                                MEN
+                            </h2>
 
-                <h3 class="title">
-                    Hair Styling
-                </h3>
+                            <div class="mx-auto bg-warning mb-3" style="width: 45px; height: 2px;">
+                            </div>
 
-                <p>
-                    Get the perfect hairstyle for any occasion.
-                </p>
+                            <p class="text-uppercase small mb-4" style="letter-spacing: 5px;">
+                                Hair & Styling
+                            </p>
 
-            </div>
+                            <a href="./men.html" class="btn btn-outline-warning px-4 py-2 rounded-0">
+                                Explore
+                                <span class="ms-3">→</span>
+                            </a>
 
+                        </div>
 
-         
-            <div class="service-card">
+                    </div>
 
-                <h3 class="title">
-                    Hair Coloring
-                </h3>
+                </div>
+                <div class="col-12 col-md-6">
 
-                <p>
-                    Professional coloring with beautiful
-                    and natural-looking results.
-                </p>
+                    <div class="position-relative overflow-hidden rounded-4 shadow-lg" style="
+                            height: 650px;
+                            background-image:
+                            url('./photo/women.jpeg');
+                            background-size: cover;
+                            background-position: center;
+                        ">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50">
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white p-4 p-md-5">
 
-            </div>
+                            <div class="fs-2 text-warning mb-2">
+                                ♡
+                            </div>
 
+                            <h2 class="display-3 fw-normal">
+                                WOMEN
+                            </h2>
 
-            
-            <div class="service-card">
+                            <div class="mx-auto bg-warning mb-3" style="width: 45px; height: 2px;">
+                            </div>
 
-                <h3 class="title">
-                    Hair Care
-                </h3>
+                            <p class="text-uppercase small mb-4" style="letter-spacing: 5px;">
+                                Hair & Beauty
+                            </p>
 
-                <p>
-                    Treatments designed to keep your hair
-                    healthy and beautiful.
-                </p>
+                            <a href="./female.html" class="btn btn-outline-warning px-4 py-2 rounded-0">
+                                Explore
+                                <span class="ms-3">→</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section> -->
-    <!--end Services -->
+    </section>
+    <!-- end services -->
 
     <!-- start footer -->
     <footer class="bg-black text-white py-5 mt-auto">
@@ -211,8 +232,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="./index.html"
                                 class="footer-link text-secondary text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="./services.html"
-                                class="footer-link text-secondary text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link text-secondary text-decoration-none">Services</a></li>
                         <li class="mb-2"><a href="./About Us.html" class="footer-link text-secondary text-decoration-none">About Us</a>
                         </li>
                         <li class="mb-2"><a href="./Teamv.html" class="footer-link text-secondary text-decoration-none">Team</a></li>
@@ -286,6 +306,7 @@
         </div>
     </footer>
     <!-- end footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
