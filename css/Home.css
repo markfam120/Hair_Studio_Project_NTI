@@ -47,12 +47,12 @@ body {
 /* ------- START NAVBAR ------- */
 
 .navbar {
-  min-height: 70px;
+  min-height: 80px;
   background-color: var(--navbar-color);
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 70px;
+  height: 80px;
 }
 
 .center-nav {
