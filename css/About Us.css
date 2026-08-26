@@ -345,3 +345,29 @@ p {
     font-size: 34px;
   }
 }
+/* ------- START FOOTER ------- */
+.footer {
+    background-color: black;
+    padding: 20px 0px;
+    margin-top: auto;
+    border: radius 30px;
+    ;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: rgb(223, 223, 75) !important;
+}
+
+.footer-location {
+    text-decoration: none;
+}
+
+.footer-location:hover {
+    color: rgb(223, 223, 75) !important;
+}
+
+/* ------- END FOOTER ------- */
