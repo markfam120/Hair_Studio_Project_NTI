@@ -92,7 +92,12 @@ body {
     min-height: 600px;
 
     overflow: hidden;
+    background-image: url("../photo/bg\ female\ v.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 
 

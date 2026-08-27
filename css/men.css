@@ -101,7 +101,7 @@ img {
 /* Outline Button */
 
 .outline-btn {
-    background: transparent;
+    background: #f3e2da;
     color: #111111;
     border: 1px solid #111111;
 }
@@ -198,7 +198,7 @@ img {
 
 .hero {
     padding: 100px 0;
-    background: #f1e5dc;
+    background: var(--dm-bg);
     overflow-x: hidden;
 }
 
@@ -259,7 +259,7 @@ img {
 
 .men-services {
     padding: 100px 0 120px;
-    background: #f1e5dc;
+    background: var(--dm-bg);
     text-align: center;
 }
 
@@ -371,7 +371,7 @@ img {
 /* Card Info */
 
 .hair-info {
-    background: #fffaf5;
+    background: var(--dm-bg);
 
     text-align: center;
 
