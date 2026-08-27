@@ -31,11 +31,7 @@ body {
   font-family: Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
-  background-image:
-        linear-gradient(
-            rgba(255, 255, 255, 0.15),
-            rgba(255, 255, 255, 0.15)
-        ),
+  background-image:var
         url(../photo/bg.jpeg);
   background-size: cover;
   background-position: center;
@@ -47,12 +43,12 @@ body {
 /* ------- START NAVBAR ------- */
 
 .navbar {
-  min-height: 70px;
+  min-height: 80px;
   background-color: var(--navbar-color);
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 70px;
+  height: 80px;
 }
 
 .center-nav {

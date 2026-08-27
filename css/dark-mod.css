@@ -1,0 +1,195 @@
+/* =========================
+   DARK MODE VARIABLES
+========================= */
+
+:root {
+    --dm-bg: #f3e2da;
+    --dm-navbar: #f4ecdc;
+    --dm-text: #111111;
+    --dm-paragraph: #444444;
+    --dm-card: #ffffff;
+    --dm-border: #dddddd;
+}
+
+[data-bs-theme="dark"] {
+    --dm-bg: #121212;
+    --dm-navbar: #1c1c1c;
+    --dm-text: #f4efe4;
+    --dm-paragraph: #cfcfcf;
+    --dm-card: #1e1e1e;
+    --dm-border: #333333;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+[data-bs-theme="dark"] body {
+    background-color: var(--dm-bg);
+    color: var(--dm-text);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+[data-bs-theme="dark"] .navbar {
+    background-color: var(--dm-navbar);
+}
+
+[data-bs-theme="dark"] .nav-links li a {
+    color: var(--dm-text);
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+[data-bs-theme="dark"] p {
+    color: var(--dm-paragraph);
+}
+
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+    color: var(--dm-text);
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--dm-card);
+    color: var(--dm-text);
+    border-color: var(--dm-border);
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+[data-bs-theme="dark"] input,
+[data-bs-theme="dark"] textarea,
+[data-bs-theme="dark"] select {
+    background-color: #1e1e1e;
+    color: #f4efe4;
+    border-color: #444;
+}
+
+[data-bs-theme="dark"] input::placeholder,
+[data-bs-theme="dark"] textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* =========================
+   BOOTSTRAP DARK TEXT
+========================= */
+
+[data-bs-theme="dark"] .text-dark {
+    color: #f4efe4 !important;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+[data-bs-theme="dark"] .btn-outline-dark {
+    color: #f4efe4;
+    border-color: #f4efe4;
+}
+
+[data-bs-theme="dark"] .btn-outline-dark:hover {
+    background-color: #f4efe4;
+    color: #121212;
+}
+
+/* =========================
+   DARK MODE FIX
+========================= */
+
+/* Common */
+[data-bs-theme="dark"] .text-secondary {
+    color: #cfcfcf !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: #1e1e1e !important;
+    color: #f4efe4 !important;
+}
+
+
+/* =========================
+   ABOUT US
+========================= */
+
+[data-bs-theme="dark"] .about-hero,
+[data-bs-theme="dark"] .philosophy,
+[data-bs-theme="dark"] .vision {
+    background-color: #121212 !important;
+}
+
+[data-bs-theme="dark"] .hero-content h1,
+[data-bs-theme="dark"] .philosophy h2,
+[data-bs-theme="dark"] .vision h2,
+[data-bs-theme="dark"] .feature h3 {
+    color: #f4efe4 !important;
+}
+
+[data-bs-theme="dark"] .hero-content p,
+[data-bs-theme="dark"] .philosophy p,
+[data-bs-theme="dark"] .vision p {
+    color: #cfcfcf !important;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+[data-bs-theme="dark"] .contact-section {
+    background-color: #121212 !important;
+}
+
+[data-bs-theme="dark"] .contact-section h4,
+[data-bs-theme="dark"] .contact-section p,
+[data-bs-theme="dark"] .contact-section span {
+    color: #cfcfcf !important;
+}
+
+[data-bs-theme="dark"] .social-links a {
+    color: #f4efe4 !important;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+[data-bs-theme="dark"] .box,
+[data-bs-theme="dark"] .time {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+    color: #f4efe4 !important;
+}
+
+[data-bs-theme="dark"] .box.active {
+    background-color: #302820 !important;
+    border-color: #bd8640 !important;
+}
+
+[data-bs-theme="dark"] .stat-icon {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+}
+
