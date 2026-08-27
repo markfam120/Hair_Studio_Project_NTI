@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +16,8 @@ body {
   color: #1a1a1a;
   line-height: 1.7;
 }
-/* start navbar*/
+/* ------- START NAVBAR ------- */
+
 .navbar {
   width: 100%;
   height: 70px;
@@ -23,17 +25,19 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 5px;
-  background-color: #f4ecd8;
+  background-color: #f4ecdc;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.container {
+.nav-container {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
 }
 
 .center-nav {
@@ -61,13 +65,12 @@ body {
 .nav-links li a:hover {
   color: #d29b2d;
 }
-/* nabvar button */
+
 .right-nav {
   width: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
 }
 
 .btn {
@@ -91,15 +94,18 @@ body {
 .btn:hover {
   background-color: #dec083;
 }
-/* end navbar*/
+
+/* END NAVBAR*/
 
 
-/* start hero section*/
+/* START HERO*/
+
 .about-hero {
-  min-height: auto;
+  min-height: 400px;
   padding: 100px 30px 40px;
   background-image:
-    linear-gradient(rgba(243, 226, 218, 0.75), rgba(243, 226, 218, 0.9)),
+    linear-gradient(rgba(243, 226, 218, 0.75),
+      rgba(243, 226, 218, 0.9)),
     url("images/about-hero.jpg");
   background-size: cover;
   background-position: center;
@@ -150,8 +156,12 @@ h2 {
 p {
   color: #444;
 }
-/* end hero section*/
-/*  start about section*/
+
+/* END HERO */
+
+
+/* START ABOUT SECTION */
+
 .about-section {
   max-width: 1200px;
   margin: auto;
@@ -162,10 +172,15 @@ p {
   align-items: center;
 }
 
+.about-image {
+  width: 100%;
+}
+
 .about-image img {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   height: auto;
-  object-fit: fill;
+  object-fit: cover;
   transform: translateX(-40px);
 }
 
@@ -176,8 +191,12 @@ p {
 .about-content strong {
   color: #111;
 }
-/* end section about*/
-/*  start section philospohy*/
+
+/* END ABOUT SECTION*/
+
+
+/* START PHILOSOPHY section */
+
 .philosophy {
   min-height: 500px;
   display: flex;
@@ -203,8 +222,12 @@ p {
 .philosophy p:last-child {
   max-width: 600px;
 }
-/* end section philosophy*/
-/* start section why choose us*/
+
+/*  END PHILOSOPHY SECTION */
+
+
+/* START WHY CHOOSE US */
+
 .why-us {
   max-width: 1200px;
   margin: auto;
@@ -242,8 +265,12 @@ p {
 .feature p {
   font-size: 14px;
 }
-/* end section why choose us*/
-/* start section vision*/
+
+/* END WHY CHOOSE US */
+
+
+/* START VISION*/
+
 .vision {
   background-color: #f3e2da;
   color: #1a1a1a;
@@ -273,8 +300,10 @@ p {
   margin-bottom: 18px;
   color: #444;
 }
-/* end section vision*/
-/* start section final message*/
+
+/* END VISION */
+
+/* START FINAL MESSAGE */
 
 .final-message {
   text-align: center;
@@ -297,14 +326,17 @@ p {
   margin-top: 20px;
   color: #d4af37;
 }
-/* end section final message*/
-/* start footer */
+
+/* END FINAL MESSAGE */
+
+
+/* START FOOTER */
+
 .footer {
   background-color: black;
-  padding: 20px 0px;
+  padding: 20px 0;
   margin-top: auto;
-  border: radius 30px;
-  ;
+  border-radius: 30px;
 }
 
 .footer-link {
@@ -322,32 +354,40 @@ p {
 .footer-location:hover {
   color: rgb(223, 223, 75) !important;
 }
-/* end footer */
-/* =================== RESPONSIVE =================== */
 
-/* ---------- Tablet ---------- */
-@media (max-width: 900px) {
+/*  END FOOTER*/
+/* START RESPONSIVE */
+
+
+/* Tablet */
+
+@media (max-width: 991px) {
 
   /* Navbar */
+
   .navbar {
     height: auto;
-    min-height: 70px;
-    padding: 12px 15px;
+    padding: 10px 15px;
   }
 
-  .navbar .container {
+  .navbar>.container {
     flex-wrap: wrap;
-    gap: 15px;
+  }
+
+  .image-Logo {
+    width: 130px;
+    height: auto;
   }
 
   .center-nav {
-    width: auto;
+    width: 100%;
+    padding-top: 15px;
   }
 
   .nav-links {
     gap: 18px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .nav-links li a {
@@ -356,24 +396,40 @@ p {
 
   .right-nav {
     width: auto;
-    margin-right: 0;
   }
 
-  .btn {
+  .right-nav .btn {
     width: auto;
     height: auto;
-    padding: 11px 14px;
-    font-size: 13px;
+    padding: 10px 14px;
+    font-size: 12px;
   }
 
-  /* About + Vision */
-  .about-section,
-  .vision {
+
+  /* Hero */
+
+  .about-hero {
+    min-height: 400px;
+    padding: 80px 25px 40px;
+  }
+
+  .hero-content .small-title {
+    font-size: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 55px;
+  }
+
+
+  /* About Section */
+
+  .about-section {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
+    padding: 80px 30px;
   }
 
-  /* About image */
   .about-image {
     display: flex;
     justify-content: center;
@@ -384,79 +440,124 @@ p {
     max-width: 700px;
     height: auto;
     transform: none;
-    object-fit: cover;
   }
 
-  /* Features */
-  .features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Hero */
-  .hero-content h1 {
-    font-size: 55px;
-  }
-
-  .hero-content .small-title {
-    font-size: 28px;
-  }
 
   /* Philosophy */
-  .philosophy h2 {
-    font-size: 40px;
+
+  .philosophy {
+    min-height: auto;
   }
 
-  /* Vision image */
+  .philosophy-content {
+    padding: 80px 30px;
+  }
+
+  .philosophy h2 {
+    font-size: 42px;
+  }
+
+
+  /* Why Choose Us */
+
+  .why-us {
+    padding: 80px 30px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+
+
+  /* Vision */
+
+  .vision {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 30px;
+  }
+
+  .vision-content {
+    max-width: 100%;
+  }
+
   .vision-image img {
+    width: 100%;
     height: 450px;
+  }
+
+
+  /* Final Message */
+
+  .final-message {
+    padding: 90px 30px;
+  }
+
+  .final-message h2 {
+    font-size: 42px;
   }
 }
 
 
-/* ---------- Mobile ---------- */
-@media (max-width: 600px) {
+/*  Mobile  */
+
+@media (max-width: 767px) {
 
   /* Navbar */
+
   .navbar {
-    padding: 12px 10px;
+    padding: 8px 10px;
   }
 
-  .navbar .container {
-    justify-content: center;
+  .navbar>.container {
+    width: 100%;
+  }
+
+  .image-Logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    padding: 6px 9px;
   }
 
   .center-nav {
     width: 100%;
-    justify-content: center;
-    order: 3;
+    padding-top: 15px;
   }
 
   .nav-links {
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
   }
 
   .nav-links li a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .right-nav {
-    width: auto;
-    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
   }
 
-  .btn {
+  .right-nav .btn {
     width: auto;
     height: auto;
-    padding: 9px 11px;
+    padding: 10px 15px;
     font-size: 11px;
   }
 
+
   /* Hero */
+
   .about-hero {
+    min-height: 350px;
     padding: 60px 20px 40px;
-    min-height: 400px;
   }
 
   .hero-content .small-title {
@@ -473,85 +574,143 @@ p {
     font-size: 16px;
   }
 
-  /* General headings */
+
+  /* General Headings */
+
   h2 {
     font-size: 32px;
   }
 
-  /* Sections */
-  .about-section,
-  .vision,
-  .why-us,
-  .philosophy-content,
-  .final-message {
-    padding: 70px 20px;
+  .section-title {
+    font-size: 12px;
+    letter-spacing: 2px;
   }
 
-  /* About image */
+
+  /* About */
+
+  .about-section {
+    padding: 60px 20px;
+    gap: 35px;
+  }
+
   .about-image img {
     width: 100%;
     height: auto;
     transform: none;
-    object-fit: cover;
   }
 
-  /* Features */
-  .features {
-    grid-template-columns: 1fr;
-    gap: 25px;
+  .about-content p {
+    font-size: 15px;
   }
 
-  .feature {
-    padding-top: 20px;
-  }
 
   /* Philosophy */
-  .philosophy {
-    min-height: auto;
+
+  .philosophy-content {
+    padding: 60px 20px;
   }
 
   .philosophy h2 {
     font-size: 34px;
   }
 
-  /* Vision image */
-  .vision-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+
+  /* Why Choose Us */
+
+  .why-us {
+    padding: 60px 20px;
   }
 
-  /* Final message */
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .feature {
+    padding-top: 20px;
+  }
+
+
+  /* Vision */
+
+  .vision {
+    padding: 60px 20px;
+    gap: 35px;
+  }
+
+  .vision-image img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .vision-content p {
+    font-size: 15px;
+  }
+
+
+  /* Final Message */
+
+  .final-message {
+    padding: 70px 20px;
+  }
+
   .final-message h2 {
     font-size: 34px;
+  }
+
+  .final-message strong {
+    font-size: 15px;
   }
 }
 
 
-/* ---------- Small Mobile ---------- */
+/*  Small Mobile */
+
 @media (max-width: 400px) {
 
-  .nav-links {
-    gap: 7px;
+  /* Navbar */
+
+  .image-Logo {
+    width: 105px;
   }
 
-  .nav-links li a {
-    font-size: 11px;
+  .navbar-toggler {
+    padding: 5px 8px;
   }
 
-  .btn {
-    padding: 8px 9px;
+  .right-nav .btn {
+    padding: 8px 10px;
     font-size: 10px;
   }
 
-  .hero-content h1 {
-    font-size: 35px;
+
+  /* Hero */
+
+  .about-hero {
+    min-height: 320px;
+    padding: 50px 15px 30px;
   }
 
   .hero-content .small-title {
     font-size: 17px;
     letter-spacing: 2px;
   }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p:last-child {
+    font-size: 14px;
+  }
+
+
+  /* Headings */
 
   h2 {
     font-size: 28px;
@@ -561,11 +720,31 @@ p {
     font-size: 30px;
   }
 
+
+  /* Sections */
+
+  .about-section,
+  .why-us,
+  .vision,
+  .final-message {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  /* Vision Image */
+
   .vision-image img {
     height: 300px;
   }
+
+
+  /* Final Message */
 
   .final-message h2 {
     font-size: 29px;
   }
 }
+
+
+/*  END RESPONSIVE  */
