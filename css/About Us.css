@@ -98,9 +98,7 @@ body {
 .about-hero {
   min-height: auto;
   padding: 100px 30px 40px;
-  background-image:
-    linear-gradient(rgba(243, 226, 218, 0.75), rgba(243, 226, 218, 0.9)),
-    url("images/about-hero.jpg");
+  background-image:    url("images/about-hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

@@ -114,3 +114,82 @@
     color: #121212;
 }
 
+/* =========================
+   DARK MODE FIX
+========================= */
+
+/* Common */
+[data-bs-theme="dark"] .text-secondary {
+    color: #cfcfcf !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: #1e1e1e !important;
+    color: #f4efe4 !important;
+}
+
+
+/* =========================
+   ABOUT US
+========================= */
+
+[data-bs-theme="dark"] .about-hero,
+[data-bs-theme="dark"] .philosophy,
+[data-bs-theme="dark"] .vision {
+    background-color: #121212 !important;
+}
+
+[data-bs-theme="dark"] .hero-content h1,
+[data-bs-theme="dark"] .philosophy h2,
+[data-bs-theme="dark"] .vision h2,
+[data-bs-theme="dark"] .feature h3 {
+    color: #f4efe4 !important;
+}
+
+[data-bs-theme="dark"] .hero-content p,
+[data-bs-theme="dark"] .philosophy p,
+[data-bs-theme="dark"] .vision p {
+    color: #cfcfcf !important;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+[data-bs-theme="dark"] .contact-section {
+    background-color: #121212 !important;
+}
+
+[data-bs-theme="dark"] .contact-section h4,
+[data-bs-theme="dark"] .contact-section p,
+[data-bs-theme="dark"] .contact-section span {
+    color: #cfcfcf !important;
+}
+
+[data-bs-theme="dark"] .social-links a {
+    color: #f4efe4 !important;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+[data-bs-theme="dark"] .box,
+[data-bs-theme="dark"] .time {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+    color: #f4efe4 !important;
+}
+
+[data-bs-theme="dark"] .box.active {
+    background-color: #302820 !important;
+    border-color: #bd8640 !important;
+}
+
+[data-bs-theme="dark"] .stat-icon {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+}
+

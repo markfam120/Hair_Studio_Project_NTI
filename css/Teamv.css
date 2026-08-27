@@ -103,7 +103,7 @@ body {
 .team-section {
     width: 100%;
     padding: 60px 30px;
-    background-color: #f4efe4;
+    background-color: var(--dm-bg);
 }
 
 .team-container {
