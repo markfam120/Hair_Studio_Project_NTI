@@ -33,7 +33,7 @@ document.getElementById("contact-Form").addEventListener("submit", async functio
     }
 
 
-    if (!/^(02)?{01}[0125][0-9]{8}$/.test(phone)) {
+    if (!/^(02)?01[0125][0-9]{8}$/.test(phone)) {
 
         Swal.fire({
             icon: "error",
