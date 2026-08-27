@@ -218,7 +218,7 @@
                   <input
                     type="text"
                     maxlength="20"
-                    required
+                    id="name"
                     class="form-control custom-input"
                     placeholder="Your Name"
                   />
@@ -226,18 +226,17 @@
                 <div class="col-md-6">
                   <input
                     type="tel"
-                    required
+                    id="phone"
                     class="form-control custom-input"
                     placeholder="Phone Number"
                     maxlength="11"
-                    pattern="[0-9]{11}"
                   />
                 </div>
               </div>
               <div class="mb-3">
                 <input
                   type="email"
-                  required
+                  id="email"
                   class="form-control custom-input"
                   placeholder="Email"
                 />
@@ -245,13 +244,14 @@
               <div class="mb-3">
                 <input
                   type="text"
-                  required
+                  id="address"
                   class="form-control custom-input"
                   placeholder="Address"
                 />
               </div>
               <div class="mb-3">
                 <textarea
+                  id="message"
                   class="form-control custom-input"
                   rows="5"
                   maxlength="100"
@@ -376,5 +376,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>
+    <script src="./js/contact-us.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
