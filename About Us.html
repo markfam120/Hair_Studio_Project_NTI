@@ -1,13 +1,9 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
-
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About Us</title>
 
@@ -17,7 +13,7 @@
         rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
         crossorigin="anonymous"
-    />
+    >
 
     <!-- Font Awesome -->
     <link
@@ -30,106 +26,173 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
-    <link rel="stylesheet" href="./css/About Us.css" />
 
-=======
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>about us</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="./css/About Us.css" />
-  <link rel="stylesheet" href="./css/dark-mod.css" />
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/About Us.css">
+
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="./css/dark-mod.css">
 </head>
 
 <body>
 
-    <!-- start navbar-->
-  <nav class="navbar navbar-expand-lg ">
+    <!-- ==================== START NAVBAR ==================== -->
+
+    <nav class="navbar navbar-expand-lg">
+
         <div class="container">
-            <img src="./photo/logo.png" alt="Logo" width="170px" height="110px" class="image-Logo navbar-brand">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+            <!-- Logo -->
+            <img
+                src="./photo/logo.png"
+                alt="Logo"
+                width="170"
+                height="110"
+                class="image-Logo navbar-brand"
+            >
+
+            <!-- Mobile Toggle -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="center-nav collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class=" nav-links navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <!-- Navigation -->
+            <div
+                class="center-nav collapse navbar-collapse"
+                id="navbarSupportedContent"
+            >
+
+                <ul class="nav-links navbar-nav mx-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
                         <a href="./index.html">Home</a>
                     </li>
-                    <li>
+
+                    <li class="nav-item">
                         <a href="./About Us.html">About</a>
                     </li>
-                    <li>
-                        <a href="./index.html #services">Services</a>
+
+                    <li class="nav-item">
+                        <a href="./index.html#services">Services</a>
                     </li>
-                    <li>
+
+                    <li class="nav-item">
                         <a href="./Teamv.html">Team</a>
                     </li>
+
+                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            menu
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Menu
                         </a>
+
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./men.html">Men</a></li>
-                            <li><a class="dropdown-item" href="./female.html">Women</a></li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="./men.html"
+                                >
+                                    Men
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="./female.html"
+                                >
+                                    Women
+                                </a>
+                            </li>
+
                         </ul>
+
                     </li>
-                    <li>
+
+                    <li class="nav-item">
                         <a href="./contact-us.html">Contact Us</a>
                     </li>
+
                 </ul>
 
+                <!-- Right Navigation -->
                 <div class="right-nav text-center d-flex align-items-center gap-2">
 
-                    <button id="themeButton" class="btn btn-outline-dark border-0" type="button"
-                        aria-label="Toggle dark mode">
-
-                        <i id="themeIcon" class="bi bi-moon-fill">
-                        </i>
-
+                    <!-- Theme Button -->
+                    <button
+                        id="themeButton"
+                        class="btn btn-outline-dark border-0"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                    >
+                        <i
+                            id="themeIcon"
+                            class="bi bi-moon-fill"
+                        ></i>
                     </button>
 
-                    <a href="./book.html" class="btn">
+                    <!-- Appointment -->
+                    <a
+                        href="./book.html"
+                        class="btn"
+                    >
                         <i class="fa-solid fa-calendar me-2"></i>
                         BOOK APPOINTMENT
                     </a>
 
                 </div>
+
             </div>
 
-
         </div>
+
     </nav>
 
-            
+    <!-- ==================== END NAVBAR ==================== -->
 
 
-    <!--  END NAVBAR  -->
-
-
-    <!--  START HERO  -->
+    <!-- ==================== START HERO ==================== -->
 
     <section class="about-hero">
 
         <div class="hero-content">
 
-            <p class="small-title">MELVN</p>
+            <p class="small-title">
+                MELVN
+            </p>
 
             <h1>
                 Hair <span>Artists</span>
             </h1>
 
-            <p>Where style meets confidence.</p>
+            <p>
+                Where style meets confidence.
+            </p>
 
         </div>
 
     </section>
+
+    <!-- ==================== END HERO ==================== -->
+
+
+    <!-- ==================== START ABOUT SECTION ==================== -->
 
     <section class="about-section">
 
@@ -138,15 +201,19 @@
             <img
                 src="https://images.squarespace-cdn.com/content/v1/5fb13a5156ff4f3028e0a71b/a578054c-9fa9-4f98-92a0-f0540c7a535a/Twirl-Salon_San-Antonio_39_2500px.jpg?format=2500w"
                 alt="Melven studio"
-            />
+            >
 
         </div>
 
         <div class="about-content">
 
-            <p class="section-title">BRIEF ABOUT US</p>
+            <p class="section-title">
+                BRIEF ABOUT US
+            </p>
 
-            <h2>More Than Just a Haircut</h2>
+            <h2>
+                More Than Just a Haircut
+            </h2>
 
             <p>
                 Welcome to <strong>Melven Hair Studio</strong>, a modern and welcoming
@@ -170,16 +237,18 @@
 
     </section>
 
-    <!-- END HERO -->
+    <!-- ==================== END ABOUT SECTION ==================== -->
 
 
-    <!-- START PHILOSOPHY -->
+    <!-- ==================== START PHILOSOPHY ==================== -->
 
     <section class="philosophy">
 
         <div class="philosophy-content">
 
-            <p class="section-title">OUR PHILOSOPHY</p>
+            <p class="section-title">
+                OUR PHILOSOPHY
+            </p>
 
             <h2>
                 Your Style.<br>
@@ -197,14 +266,22 @@
 
     </section>
 
+    <!-- ==================== END PHILOSOPHY ==================== -->
+
+
+    <!-- ==================== START WHY CHOOSE US ==================== -->
 
     <section class="why-us">
 
         <div class="section-heading">
 
-            <p class="section-title">WHY CHOOSE US</p>
+            <p class="section-title">
+                WHY CHOOSE US
+            </p>
 
-            <h2>Why Malvin</h2>
+            <h2>
+                Why Melvin
+            </h2>
 
         </div>
 
@@ -212,9 +289,13 @@
 
             <div class="feature">
 
-                <div class="number">01</div>
+                <div class="number">
+                    01
+                </div>
 
-                <h3>Professional Team</h3>
+                <h3>
+                    Professional Team
+                </h3>
 
                 <p>
                     Our hair artists are passionate about their work and committed to
@@ -223,12 +304,15 @@
 
             </div>
 
-
             <div class="feature">
 
-                <div class="number">02</div>
+                <div class="number">
+                    02
+                </div>
 
-                <h3>Personalized Style</h3>
+                <h3>
+                    Personalized Style
+                </h3>
 
                 <p>
                     We take the time to understand what you want and create a style
@@ -237,12 +321,15 @@
 
             </div>
 
-
             <div class="feature">
 
-                <div class="number">03</div>
+                <div class="number">
+                    03
+                </div>
 
-                <h3>Modern Techniques</h3>
+                <h3>
+                    Modern Techniques
+                </h3>
 
                 <p>
                     We keep up with the latest hairstyles, trends, and professional
@@ -251,12 +338,15 @@
 
             </div>
 
-
             <div class="feature">
 
-                <div class="number">04</div>
+                <div class="number">
+                    04
+                </div>
 
-                <h3>Comfortable Experience</h3>
+                <h3>
+                    Comfortable Experience
+                </h3>
 
                 <p>
                     Our goal is to make every visit comfortable, welcoming, and
@@ -269,10 +359,10 @@
 
     </section>
 
-    <!-- END PHILOSOPHY-->
+    <!-- ==================== END WHY CHOOSE US ==================== -->
 
 
-    <!-- START VISION -->
+    <!-- ==================== START VISION ==================== -->
 
     <section class="vision">
 
@@ -281,15 +371,19 @@
             <img
                 src="https://images.pexels.com/photos/19664047/pexels-photo-19664047/free-photo-of-portrait-of-woman-and-man-with-curly-hair.jpeg?cs=tinysrgb&dpr=1&w=500"
                 alt="Modern Hair Studio"
-            />
+            >
 
         </div>
 
         <div class="vision-content">
 
-            <p class="section-title">OUR VISION</p>
+            <p class="section-title">
+                OUR VISION
+            </p>
 
-            <h2>Setting New Standards</h2>
+            <h2>
+                Setting New Standards
+            </h2>
 
             <p>
                 Our vision is to become one of Giza's leading destinations for modern
@@ -311,14 +405,16 @@
 
     </section>
 
-    <!--  END VISION -->
+    <!-- ==================== END VISION ==================== -->
 
 
-    <!-- START FINAL MESSAGE -->
+    <!-- ==================== START FINAL MESSAGE ==================== -->
 
     <section class="final-message">
 
-        <p class="section-title">OUR PROMISE</p>
+        <p class="section-title">
+            OUR PROMISE
+        </p>
 
         <h2>
             Leave Looking Good.<br>
@@ -335,52 +431,11 @@
 
     </section>
 
-    <!-- END FINAL MESSAGE-->
+    <!-- ==================== END FINAL MESSAGE ==================== -->
 
 
-    <!--  START FOOTER -->
+    <!-- ==================== START FOOTER ==================== -->
 
-<<<<<<< HEAD
-=======
-      <p>
-        Our vision is to become one of Giza's leading destinations for modern
-        hair and grooming services.
-      </p>
-
-      <p>
-        We aim to create a place where everyone can feel confident, relaxed,
-        and inspired by their look.
-      </p>
-
-      <p>
-        By combining creativity, professional skills, modern techniques, and
-        genuine customer care, we continuously work to create an experience
-        that keeps our clients coming back.
-      </p>
-    </div>
-  </section>
-    <!---- end section vision-->
-<!--- start section final message-->
-  <section class="final-message">
-    <p class="section-title">OUR PROMISE</p>
-
-    <h2>
-      Leave Looking Good.<br />
-      Leave Feeling <span>Confident.</span>
-    </h2>
-
-    <p>
-      Hair Studio, we don't just want you to leave with a great hairstyle.
-    </p>
-
-    <strong>
-      We want you to leave feeling more confident than when you walked in.
-    </strong>
-  </section>
-
-  <!--- end section final message-->
-  <!-- start footer -->
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
     <footer class="bg-black text-white py-5 mt-auto">
 
         <div class="container">
@@ -388,7 +443,6 @@
             <div class="row g-3">
 
                 <!-- Brand -->
-
                 <div class="col-lg-3 col-md-6 mb-4">
 
                     <div class="d-flex align-items-center gap-2 mb-3">
@@ -423,7 +477,6 @@
 
 
                 <!-- Explore -->
-
                 <div class="col-lg-2 col-md-6 mb-4">
 
                     <h5 class="text-white mb-3 footer-heading">
@@ -431,7 +484,6 @@
                     </h5>
 
                     <ul class="list-unstyled">
-<<<<<<< HEAD
 
                         <li class="mb-2">
                             <a
@@ -475,18 +527,6 @@
 
 
                 <!-- Social Media -->
-
-=======
-                        <li class="mb-2"><a href="./index.html"
-                                class="footer-link text-secondary text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="#services" class="footer-link text-secondary text-decoration-none">Services</a></li>
-                        <li class="mb-2"><a href="./About Us.html" class="footer-link text-secondary text-decoration-none">About Us</a>
-                        </li>
-                        <li class="mb-2"><a href="./Teamv.html" class="footer-link text-secondary text-decoration-none">Team</a></li>
-                    </ul>
-                </div>
-
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
                 <div class="col-lg-2 col-md-6 mb-4">
 
                     <h5 class="text-white mb-3 footer-heading">
@@ -541,7 +581,6 @@
 
 
                 <!-- Branches -->
-
                 <div class="col-lg-2 col-md-6 mb-4">
 
                     <h5 class="text-white mb-3 footer-heading">
@@ -557,17 +596,12 @@
                         <i class="bi bi-geo-alt-fill me-2 text-warning"></i>
                         Alex, El-Agamy
                     </p>
-<<<<<<< HEAD
 
                 </div>
 
 
                 <!-- Contact -->
-
                 <div class="col-lg-3 col-md-6 mb-4">
-=======
-                </div>
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
 
                     <h5 class="text-white mb-3 footer-heading">
                         Contact Us
@@ -613,15 +647,12 @@
 
             </div>
 
-<<<<<<< HEAD
 
-            <!-- Footer line -->
-
+            <!-- Footer Line -->
             <hr class="border-secondary opacity-25 my-4">
 
 
             <!-- Copyright -->
-
             <div class="text-center small">
 
                 &copy; 2026 MELVN SALON - hair & beauty studio.
@@ -629,29 +660,19 @@
 
             </div>
 
-=======
-            <hr class="border-secondary opacity-25 my-4">
-            <div class="text-center  small">
-                &copy; 2026 MELVN SALON - hair & beauty studio. All Rights Reserved.
-            </div>
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
         </div>
 
     </footer>
-<<<<<<< HEAD
 
     <!-- ==================== END FOOTER ==================== -->
 
 
     <!-- Bootstrap JavaScript -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-=======
-    <!-- end footer -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="./js/main.js"></script>
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
+    <!-- Main JavaScript -->
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>

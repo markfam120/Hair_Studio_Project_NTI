@@ -99,25 +99,27 @@ body {
 
 
 /* START HERO*/
+/* ==================== START HERO ==================== */
 
 .about-hero {
   min-height: 400px;
   padding: 100px 30px 40px;
-<<<<<<< HEAD
+
   background-image:
     linear-gradient(rgba(243, 226, 218, 0.75),
       rgba(243, 226, 218, 0.9)),
     url("images/about-hero.jpg");
-=======
-  background-image:    url("images/about-hero.jpg");
->>>>>>> e17cdfe80c4fd6e6f795494e8f3ee7f1c5ac9ac0
+
   background-size: cover;
   background-position: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
+/* ==================== END HERO ==================== */
 
 .hero-content .small-title {
   color: #d29b2d;
